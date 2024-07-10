@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Sirreessaa Qubeeffama Afaan Oromoo</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+ 
+
+    <!-- Suggestions container -->
+    <div id="suggestions">
+        <ul></ul>
+        <div id="suggestion-actions">
+            <i class="bi bi-slash-circle"></i>
+            <i class="bi bi-file-earmark-plus"></i>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+      
+        <div id="inputText" class="text-area" contenteditable="true"  oninput="handleInput(event)" onpaste="handlePaste(event)"
+        ondrop="handleDrop(event)" data-text="As irraa barreessuu jalqabi">
+        
+         
+        </div>
+        
+        <div class="suggestions-container">
+          <div class="suggestions-header">
+            <span class="suggestions-logo"><img id="avatar" src="{{ url_for('static', filename='o.jpg') }}" alt=""></span> Qajeelfama
+          </div>
+          <div class="suggestions-content">
+            <h2>Eegaluuf.</h2>
+            <p><span>Sadarkaa 1:</span> Barreeffama kee itti dabali, Seerlugaan dhimmoota kamiyyuu jala sarara.</p>
+            <p><span>Sadarkaa 2:</span> Yaada ilaaluuf sarara jala jiru irratti cuqaasi.</p>
+            <p><span>Sadarkaa 3:</span> Yaada tokko cuqaasuun fudhadhu.</p>
+        </div>
+        
+        </div>
+      </div>
+      
+      {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+
+</html>

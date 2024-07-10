@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Afan Oromo Spell Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <section class="hero">
+        <div class="contain">
+            <h1>About Us</h1>
+            <p>We are a team of dedicated software engineering students from Haramaya University, passionate about linguistic diversity and technological innovation. Our project, the Afan Oromo Spell Checker, aims to address the challenges faced by writers and speakers of Afan Oromo in accurately communicating their thoughts and ideas.</p>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="contain">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='gal.jpg') }}" alt="Galata Wakwaya">
+                    <h3>Galata Wakwaya</h3>
+                    <p>Lead Developer</p>
+                    
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='170.jpg') }}" alt="Fufa Wakgari">
+                    <h3>Fufa Wakgari</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='169.jpg') }}" alt="Lechisa Bedasa">
+                    <h3>Lechisa Bedasa</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='el.jpg') }}" alt="Elias Bekele">
+                    <h3>Elias Bekele</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='ku.jpg') }}" alt="Kumsa Kitesa">
+                    <h3>Kumsa Kitesa</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        <div class="contain">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower individuals and communities by providing a reliable and accessible tool for improving written communication in Afan Oromo. By leveraging our expertise in software development and linguistics, we strive to enhance the quality and accuracy of Afan Oromo text, thereby promoting literacy and preserving cultural heritage.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contain">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, suggestions, or feedback, please don't hesitate to reach out to us. We value your input and are committed to continually improving our project.</p>
+            <p>Email: info@afanoromospellchecker.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

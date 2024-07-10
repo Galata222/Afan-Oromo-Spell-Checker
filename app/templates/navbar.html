@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirreessaa Qubeeffama Afaan Oromoo</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/" class="nav-link">
+                    <div id="avatar">
+                        <img src="{{ url_for('static', filename='oda.jpg') }}" alt="Oda Oromo Icon">
+                    </div>
+                </a></li>
+            <li class="nav-item">
+                <div id="header-container">
+                    <h1>Sirreessaa Qubeeffama Afaan Oromoo</h1>
+                </div>
+            </li>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+</body>
+</html>
