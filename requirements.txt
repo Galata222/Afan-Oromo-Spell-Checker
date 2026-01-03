@@ -1,4 +1,5 @@
 Flask==2.3.0
 Werkzeug==2.3.0
-Levenshtein==0.27.0
+Levenshtein
+
 
