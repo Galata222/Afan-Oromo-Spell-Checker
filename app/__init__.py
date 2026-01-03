@@ -16,8 +16,7 @@ from app.routes.login import login_routes  # Import login_routes Blueprint
 from app.routes.admin import admin_routes  # Import login_routes Blueprintadmin_register_routes
 from app.routes.register_admin import register_admin_routes
 def create_app():
-    app = Flask(__name__, static_url_path='/static')
-    # Set the secret key
+    app = Flask(__name__, template_folder='templates', static_folder='static', static_url_path='/static')    # Set the secret key
     app.config['SECRET_KEY'] = '1234567890'
     app.register_blueprint(tokenization_routes, url_prefix='/')
     app.register_blueprint(index_app, url_prefix='/')
@@ -34,5 +33,6 @@ def create_app():
     app.register_blueprint(admin_routes,url_prefix='/')
     app.register_blueprint(login_routes,url_prefix='/')  # Register login_routes with a prefix
     app.register_blueprint(register_admin_routes,url_prefix='/')
+
 
     return app
